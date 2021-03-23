@@ -2703,7 +2703,7 @@ pub fn patch_iso<T>(config: ParsedConfig, mut pn: T) -> Result<(), String>
     writeln!(ct, "Created by randomprime version {}", env!("CARGO_PKG_VERSION")).unwrap();
     writeln!(ct).unwrap();
     writeln!(ct, "Options used:").unwrap();
-    writeln!(ct, "layout: {:#?}", config.layout).unwrap();
+    // writeln!(ct, "layout: {:#?}", config.layout).unwrap();
     writeln!(ct, "skip frigate: {}", config.skip_frigate).unwrap();
     writeln!(ct, "keep fmvs: {}", config.keep_fmvs).unwrap();
     writeln!(ct, "nonmodal hudmemos: {}", config.skip_hudmenus).unwrap();
